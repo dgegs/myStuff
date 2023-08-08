@@ -11,6 +11,7 @@
     <script src="https://kit.fontawesome.com/9c7550d1dd.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="baseball.css">
+    <link rel="stylesheet" href="reg.css">
 
 </head>
 <body>
@@ -26,7 +27,7 @@
                     <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="baseball.html">Baseball</a>
+                    <a class="nav-link" href="baseball.html">Baseball</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="basketball.html">Basketball</a>
@@ -46,37 +47,37 @@
             </span>
         </div>
     </nav>
-    <div class="new-users grid12-6">
-        <div class="content">
+    <!-- End Navigation -->
+    <!-- Begin Registration Form-->
+    <div class="row p-4">
+        <div id="newCust" class="col-sm-6">
             <h2>New Customers</h2>
-            <p>By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.</p>
+            <p>By creating an account with our store, you will be able to move through the checkout process faster
+            store multiple shipping addresses, view and track your orders in your account and more.</p>
+            <div class="buttons-set"> 
+                <button type="button" title="Create an Account" class="button" onclick="window.location='https://www.blowoutcards.com/customer/account/create/';">Create Account</button> 
+            </div>
         </div>
-        <div class="buttons-set"> 
-            <button type="button" title="Create an Account" class="button" onclick="window.location='https://www.blowoutcards.com/customer/account/create/';">
-                <span><span>Create an Account</span></span></button> 
-        </div>
-    </div>
-    <div class="registered-users grid12-6">
-        <div class="content">
+        <div id="returnCust" class="col-sm-6">
             <h2>Registered Customers</h2>
             <p>If you have an account with us, please log in.</p>
-            <ul class="form-list">
+            <ul class="form-list no-bullets">
                 <li> 
-                    <label for="email" class="required"><em>*</em>Email Address</label>
+                    <label for="email" class="required">Email Address</label>
                      <div class="input-box"> 
                         <input name="login[username]" value="" id="email" class="input-text required-entry validate-email" title="Email Address"/> 
                     </div>
                 </li>
                 <li> 
-                    <label for="pass" class="required"><em>*</em>Password</label> 
+                    <label for="pass" class="required">Password</label> 
                     <div class="input-box"> 
                         <input type="password" name="login[password]" class="input-text required-entry validate-password" id="pass" title="Password"/> 
                     </div>
                 </li>
             </ul>
-            <div id="window-overlay" class="window-overlay" style="display:none;"></div>
-            <div id="remember-me-popup" class="remember-me-popup" style="display:none;">
-                <div class="remember-me-popup-head"><h3>What's this?</h3> 
+        </div>
+    </div>
+   
 
 </body>
 </html>
